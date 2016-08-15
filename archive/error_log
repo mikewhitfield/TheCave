@@ -1,0 +1,4 @@
+[04-Feb-2016 19:46:26 America/Chicago] PHP Parse error:  syntax error, unexpected 'cors' (T_STRING), expecting '(' in /home4/whitfield/public_html/projects/cave/index.php on line 4
+[04-Feb-2016 19:53:29 America/Chicago] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home4/whitfield/public_html/projects/cave/index.php on line 3
+[05-Feb-2016 17:29:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'video' (T_STRING), expecting ',' or ';' in /home4/whitfield/public_html/projects/cave/index.php on line 94
+[05-Feb-2016 17:48:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home4/whitfield/public_html/projects/cave/index.php on line 101

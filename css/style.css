@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300);
+@import url(https://fonts.googleapis.com/css?family=Poppins:500,600);
+
+
+
+/* #Generic Styles
+================================================== */
+body {
+	background-color:#1a171a;
+	font-family: 'Roboto', sans-serif; 	
+	font-size: 16px; 
+	font-weight: 300; 
+	color: #fff;
+	margin: 0; 
+	padding: 0;
+}
+
+.page{ max-width: 960px; margin: 0 auto; position: relative;}
+section {padding:45px 0;}
+section::after{content:''; display:block; clear:both; }
+
+.hidden{display:none}
+
+/* #Navigation
+================================================== */
+nav::after{content:''; display:block; clear:both; }
+
+nav {
+    background-color: rgba(0,0,0,.65);
+    position: relative;
+    padding: 10px 0 20px 0;
+	height:auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	float:right;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+
+
+
+nav a.mobile_menu {
+width:32px; height:32px;
+background: url(../img/icon_menu.svg) no-repeat 0 0;
+background-size:contain;
+position:absolute;
+top:-20px;
+left:50%;
+margin-left:-16px;
+display:none;
+}
+
+
+/* #Typography
+================================================== */
+
+
+h2, h4 {text-transform: uppercase;}
+
+h1 {margin: 0 0 .2em 0; font-size: 2.8em; font-weight: 700;}
+h2 {margin: 0 0 .5em 0; font-size: 1.4em; font-weight: 600; line-height: 1.1em;}
+h3 {
+	margin: 0 0 .5em 0;
+	font-size: 1.3em; 
+	font-weight: 400; 
+ 	border-bottom: 1px solid #bebebe;
+	margin-bottom: 30px;
+ }
+ 
+h4 {margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700; }
+
+h1, h2, h3, h4 {color: #fff; margin-left:10px;}
+
+/* #Podcast Header
+================================================== */
+
+header {
+background:url(../img/4bar-big.jpg) no-repeat center;
+padding-bottom:30px;
+border-bottom:15px solid #202020;
+}
+
+.vid {width:100%; margin:0 auto;}
+.video {width:100%; height:415px;}
+
+#podcast-info {font-family: 'Poppins', sans-serif;}
+
+.general-info {width:45%; padding:2.5%; float:left;}
+
+.broadcast{
+display:block;
+ margin:20px 0;
+ font-size:1.5em; 
+ font-weight:400; 
+ border-bottom:3px solid #fff;
+ }
+
+.general-info a {
+display:inline-block; 
+padding:15px 25px;  margin:10px 0;
+color:#fff; 
+text-decoration:none; 
+font-weight:600; 
+background-color:#0ce682;
+-webkit-border-radius: 12px 12px 12px 12px;
+border-radius: 12px 12px 12px 12px;
+}
+
+.podcast-details {width:48%; float:right;}
+.pod-time {}
+.episode-title{font-size:2em; font-weight:600; letter-spacing:3px; text-transform:uppercase; margin:1% 0;}
+.pod-date{}
+.pod-summary{}
+
+.yvid:hover { background-color:#0ce682; }
+
+.yvid {
+    display: block;
+    padding: 5px 15px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    background-color:#222;
+    transition: background-color .5s;
+    }
+
+
+select {
+  font-size:50px;
+}
+
+.other-videos {
+  width:100%;
+  margin:20px 0;
+  font-size:1.2em;
+}
+
+/* #Podcast Player
+================================================== */
+.player {background-color:#202020;}
+#podcast-player {margin:0; padding:0;}
+#audio_player {width:30%; padding:12px 0; margin:0 auto;}
+
+
+/* #Pagination
+================================================== */
+.pagination_podcast, .pagination_crush {margin-left:10px;}
+.pagination_podcast a {text-decoration:none; color:#0ce682; font-weight:400; margin:0 5px;}
+.pagination_crush a {text-decoration:none; color:#fff; font-weight:400; margin:0 5px;}
+.page-left span,.pag-right span {display:none; }
+.page-left { background: url("../img/left-arrow.png") no-repeat 0 center;  padding:2px 8px; }
+.pag-right { background: url("../img/right-arrow.png") no-repeat 0 center; padding:2px 8px;}
+
+
+
+
+
+/* #Podcast List
+================================================== */
+
+#podlist,#cavecrush, #cavemen {width:100%; margin:0 auto;}
+
+#playlist::after{content:''; display:block; clear:both; }
+#playlist{display:inline-block; width:auto; margin:0 auto;}
+
+.pod-info:hover { background-color:#61738f; }
+
+.pod-info{
+width:25%;
+height:330px;
+float:left;
+margin:20px 2.5%; padding: 1.5%;
+background-color:#2c4256; 
+transition: background-color .5s;
+color:#fff;
+position:relative;
+}
+
+
+.pod-info.withpic{
+width:25%;
+height:330px;
+float:left;
+margin:20px 2.5%; padding: 1.5%;
+background-color:#2c4256; 
+transition: background-color .5s;
+color:#fff;
+position:relative;
+}
+
+.pod-info a {
+display:inline-block; 
+background-color: #263040;
+color:#0ce682; 
+font-weight:600; 
+text-decoration:none; 
+margin-top:20px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border-radius: 15px 15px 15px 15px;
+padding: 7px 22px;
+position:absolute;
+bottom:10px;
+right:5px;
+}
+
+.pod-info h2{margin-top:2%;}
+.pre-data::after{content:''; display:block; clear:both; }
+.pre-data {margin-bottom:10px;}
+.subtitle, .duration {color:#0ce682; font-weight:600;}
+.subtitle {width:55%; float:left; display:none;}
+.duration {width:20%; float:right;}
+
+.pod-pic {display:inline-block; width:100%; position:absolute; left:0%;}
+.pod-pic-cont{position: relative;  padding:5px 50px 95px 50px; overflow: hidden; margin:0;}
+.summary {display:none}
+
+/* #Cavecrush
+================================================== */
+div.container.crush {background-color:#941b5a; border-top:15px solid #67113e; border-bottom:15px solid #202020;}
+
+#instafeed {width:40%; float:left;}
+#instafeed::after{content:''; display:block; clear:both; }
+
+.instagram_container img {width:100%; border:8px solid #67113e;}
+.instagram_container {float:left; margin:5%; width:40%;}
+
+#large-pic {width:50%; float:left; margin-top:30px; margin-right:9%;}
+#large-pic img {width:100%;  border:8px solid #67113e;}
+
+
+/* #Cavemen
+================================================== */
+#cavemen::after{content:''; display:block; clear:both; }
+
+#cavemen div img {
+    border:10px solid #2a242a;
+    width:65%;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border-radius: 200px 200px 200px 200px;    
+}
+
+#cavemen div {
+float: left; 
+width:30%; height:325px; 
+margin:30px 1.5%; 
+text-align:center; 
+}
+
+#cavemen div span {display:block; margin:10px 0; font-size:.85em; font-family: 'Poppins', sans-serif; font-weight:500;}
+
+.name {color: #0ce682; font-size:1em;}
+
+
+/* #Whatsup
+================================================== */
+
+div.container.social {background-color:#283146; border-top:15px solid #1e2433;}
+section#social iframe {width:90%;}
+
+
+/* #Whatsup
+================================================== */
+
+div.container.footer {background-color:#100e0f; color:#fff; border-top:15px solid #282325; padding:5px 0;}
+.footer-info {width:65%; margin:0 auto;}
+footer img {height:75px; width:75px;}
+footer p {display:inline-block;}
+
+/* #Queiries
+================================================== */
+@media screen and (max-width:900px) {
+
+   .pod-info {
+    height: 310px;
+    }   
+    .pod-info h2 {font-size:1.4em;} 
+}
+
+@media screen and (max-width:805px) {
+	#large-pic{width:50%;}
+}
+
+@media screen and (max-width:745px) {
+   .episode-title {font-size:1.5em;}
+   .pod-summary {font-size:.9em;}
+   
+   .pod-info {
+    width:40%;
+    margin-left:3.5%;
+    margin-right:3.5%;
+    height: 310px;
+    } 
+    
+    .pod-info h2 {font-size:1.2em;} 
+    
+	nav {    height: 15px; overflow: hidden;}
+    nav ul {float:none; padding: 0 10px; position:static; margin-top:20px;}
+	nav li {float:none; width:100%; text-align:center; border-bottom:1px solid #fff;}
+	nav a.mobile_menu { display: block;}    
+    
+}
+
+@media screen and (max-width:600px) {
+    h1 {font-size:2.2em;}
+
+   .episode-title {font-size:1.2em;}
+   .pod-summary {font-size:.7em;}
+   #podcast-info div, #instafeed, #large-pic {float:none; width:90%;}
+   .podcast-details {padding:2.5%;}
+   #large-pic {width:70%; margin:0 auto;}
+   .instagram_container {width:25%;}
+   .insta-feed {width:75%; margin:0 auto;}
+
+   #cavemen div {width:40%; height:325px; margin:30px 2.5%;}
+   
+}
+
+
+@media screen and (max-width:525px) {
+   #audio_player {display:table; margin:0 auto;}
+}
+
+@media screen and (max-width:490px) {
+   h1 {font-size:1.8em;}
+   	
+   .pod-info {
+	float:none;
+	width:90%;
+	height:300px;
+    } 
+    
+    .pagination_podcast a {font-size:1.2em;}
+    .pagination_crush {margin:15px 0;}
+    .pagination_crush a {font-size:1.2em;}
+    #large-pic {width:90%; margin:0 auto;}  
+   .instagram_container {width:40%; margin:5%;}
+   .insta-feed {width:85%; margin:0 auto;}   
+    #cavemen div {width:60%; height:255px; margin:30px 18%;} 
+}
